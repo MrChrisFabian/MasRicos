@@ -1,0 +1,11 @@
+---
+interface Props {
+	href: string;
+    text: string; //typescript esto es y ese es un atributo de la etiqueta
+}
+const { href } = Astro.props;
+const { text } = Astro.props;
+---
+
+
+<a href={href} class="text-stone-800 antialised font-semibold hover:underline decoration-2 decoration-rose-500 ">{text}
