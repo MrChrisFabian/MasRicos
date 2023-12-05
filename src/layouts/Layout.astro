@@ -1,0 +1,36 @@
+---
+interface Props {
+	title: string; //typescript esto es y ese es un atributo de la etiqueta
+}
+const { title } = Astro.props; //hacemos una constante para acceder al valor de tittle y astro es una variable global
+import BarraNav from "../components/BarraNav.astro"; //importamos el componente que vamos a usar en el layout
+---
+
+<!-- Este es el html que usamos para hacer el layout en la webpage --><!doctype html>
+<html lang="en">
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;800&display=swap"
+			rel="stylesheet"
+		/>
+		<title>{title}</title></head
+	>
+
+	<body class="bg-white">
+		<main class="max-h-screen">
+			<BarraNav />
+			<slot />
+		</main>
+	</body>
+
+	<!-- este es el css para el layout y puede ser global o solo para este html -->
+	<style is:global>
+		html {
+			font-family: "Prompt", sans-serif;
+			background: #f1e9df;
+			color-scheme: light;
+		}
+	</style>
+</html>

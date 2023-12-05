@@ -1,0 +1,26 @@
+---
+import Layout from "../layouts/Layout.astro";
+import SocialMedia from "../components/SocialMedia.astro";
+import RedCircle from "../components/RedCircle.astro";
+import TextoInicio from "../components/TextoInicio.astro";
+import Boton from "../components/Boton.astro";
+import Scrollimage from "../components/Scrollimage.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body class="">
+    <Layout title="Mas Ricos.">
+      <div class="fixed left-28 top-72 z-10 flex flex-col justify-around">
+        <TextoInicio />
+        <Boton />
+      </div>
+      <div class="fixed top-48 right-1/2 z-0"><RedCircle /></div>
+      <div class="fixed top-96 right-0"><SocialMedia /></div>
+
+    </Layout>
+  </body>
+</html>
