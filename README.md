@@ -2,7 +2,7 @@
 Pagina diseñada para una tienda Fictica de nombre "Mas Ricos"
 Con el Principal objetivo de aprender y utilizar Astro.
 # WebPage
-[Puedes Visitarla Aquí.](masricos.netlify.app)
+[Puedes Visitarla Aquí.](https://masricos.netlify.app/)
 ![+R](https://github.com/MrChrisFabian/MasRicos/assets/146046957/b7379be8-dbdf-486f-a1e7-0bf6950bb02b)
 
 # Astro 🚀
